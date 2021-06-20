@@ -18,6 +18,11 @@
 		11A27BEC267DAD7E004FC5E0 /* ExtratoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A27BEA267DAD7D004FC5E0 /* ExtratoViewController.swift */; };
 		11A27BED267DAD7E004FC5E0 /* ExtratoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A27BEB267DAD7E004FC5E0 /* ExtratoViewController.xib */; };
 		11A27BF5267DAD94004FC5E0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A27BF4267DAD94004FC5E0 /* AppCoordinator.swift */; };
+		11A582A4267FC9EB00E74929 /* ExtratoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A582A2267FC9EB00E74929 /* ExtratoTableViewCell.swift */; };
+		11A582A5267FC9EB00E74929 /* ExtratoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A582A3267FC9EB00E74929 /* ExtratoTableViewCell.xib */; };
+		11A582AE267FDE3E00E74929 /* Transacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A582AD267FDE3D00E74929 /* Transacao.swift */; };
+		11A582B3267FDE6B00E74929 /* Saldo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A582B2267FDE6B00E74929 /* Saldo.swift */; };
+		11A582B8267FE21D00E74929 /* Detalhes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A582B7267FE21D00E74929 /* Detalhes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		11A27BEA267DAD7D004FC5E0 /* ExtratoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoViewController.swift; sourceTree = "<group>"; };
 		11A27BEB267DAD7E004FC5E0 /* ExtratoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtratoViewController.xib; sourceTree = "<group>"; };
 		11A27BF4267DAD94004FC5E0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		11A582A2267FC9EB00E74929 /* ExtratoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoTableViewCell.swift; sourceTree = "<group>"; };
+		11A582A3267FC9EB00E74929 /* ExtratoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtratoTableViewCell.xib; sourceTree = "<group>"; };
+		11A582AD267FDE3D00E74929 /* Transacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transacao.swift; sourceTree = "<group>"; };
+		11A582B2267FDE6B00E74929 /* Saldo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saldo.swift; sourceTree = "<group>"; };
+		11A582B7267FE21D00E74929 /* Detalhes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detalhes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +173,7 @@
 		11A27BE7267DAD5E004FC5E0 /* Extrato */ = {
 			isa = PBXGroup;
 			children = (
+				11A582AC267FDE2B00E74929 /* Model */,
 				11A27BE9267DAD6A004FC5E0 /* View */,
 			);
 			path = Extrato;
@@ -171,10 +182,30 @@
 		11A27BE9267DAD6A004FC5E0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				11A582A1267FC9CE00E74929 /* Cell */,
 				11A27BEA267DAD7D004FC5E0 /* ExtratoViewController.swift */,
 				11A27BEB267DAD7E004FC5E0 /* ExtratoViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		11A582A1267FC9CE00E74929 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				11A582A2267FC9EB00E74929 /* ExtratoTableViewCell.swift */,
+				11A582A3267FC9EB00E74929 /* ExtratoTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		11A582AC267FDE2B00E74929 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11A582AD267FDE3D00E74929 /* Transacao.swift */,
+				11A582B2267FDE6B00E74929 /* Saldo.swift */,
+				11A582B7267FE21D00E74929 /* Detalhes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +314,7 @@
 				11A27BB3267DAC9E004FC5E0 /* LaunchScreen.storyboard in Resources */,
 				11A27BED267DAD7E004FC5E0 /* ExtratoViewController.xib in Resources */,
 				11A27BB0267DAC9E004FC5E0 /* Assets.xcassets in Resources */,
+				11A582A5267FC9EB00E74929 /* ExtratoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,11 +339,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A582B3267FDE6B00E74929 /* Saldo.swift in Sources */,
 				11A27BF5267DAD94004FC5E0 /* AppCoordinator.swift in Sources */,
 				11A27BAE267DAC9D004FC5E0 /* PhiChallenge.xcdatamodeld in Sources */,
+				11A582A4267FC9EB00E74929 /* ExtratoTableViewCell.swift in Sources */,
 				11A27BEC267DAD7E004FC5E0 /* ExtratoViewController.swift in Sources */,
 				11A27BE2267DAD48004FC5E0 /* MainCoordinator.swift in Sources */,
 				11A27BA4267DAC9D004FC5E0 /* AppDelegate.swift in Sources */,
+				11A582B8267FE21D00E74929 /* Detalhes.swift in Sources */,
+				11A582AE267FDE3E00E74929 /* Transacao.swift in Sources */,
 				11A27BA6267DAC9D004FC5E0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
