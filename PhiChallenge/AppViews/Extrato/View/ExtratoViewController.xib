@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExtratoViewController" customModule="PhiChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="wPN-1O-otu" id="wDl-AB-env"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -37,30 +38,55 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$ 1.345,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJd-K0-6g8">
-                                    <rect key="frame" x="8" y="47" width="92" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 1.345,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJd-K0-6g8">
+                                    <rect key="frame" x="8" y="47" width="171" height="41"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                    <color key="textColor" red="0.0" green="0.75686274509999996" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye.slash.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6UP-rG-Jeu">
+                                    <rect key="frame" x="90" y="17" width="27" height="20.5"/>
+                                    <color key="tintColor" red="0.0" green="0.75686274509999996" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
+                                <constraint firstItem="6UP-rG-Jeu" firstAttribute="leading" secondItem="UH3-dN-WjG" secondAttribute="trailing" constant="8" id="0hT-T0-J1A"/>
+                                <constraint firstItem="fJd-K0-6g8" firstAttribute="top" secondItem="UH3-dN-WjG" secondAttribute="bottom" constant="7.5" id="OsW-FY-PPK"/>
                                 <constraint firstItem="UH3-dN-WjG" firstAttribute="leading" secondItem="3HK-wj-RBU" secondAttribute="leading" constant="8" id="Wwn-0D-7jc"/>
+                                <constraint firstItem="fJd-K0-6g8" firstAttribute="leading" secondItem="3HK-wj-RBU" secondAttribute="leading" constant="8" id="b1D-ZM-7Gj"/>
+                                <constraint firstAttribute="bottom" secondItem="fJd-K0-6g8" secondAttribute="bottom" constant="8" id="bcu-tP-AQT"/>
                                 <constraint firstAttribute="height" constant="96" id="dAb-fl-88C"/>
+                                <constraint firstItem="6UP-rG-Jeu" firstAttribute="top" secondItem="3HK-wj-RBU" secondAttribute="top" constant="16" id="s1G-gY-Xfv"/>
+                                <constraint firstItem="fJd-K0-6g8" firstAttribute="top" secondItem="6UP-rG-Jeu" secondAttribute="bottom" constant="8" id="tS3-Bg-RLi"/>
                                 <constraint firstItem="UH3-dN-WjG" firstAttribute="top" secondItem="3HK-wj-RBU" secondAttribute="top" constant="16" id="v31-b3-mYs"/>
                             </constraints>
                         </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suas movimentações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veX-Wk-EVh">
+                            <rect key="frame" x="8" y="154" width="156" height="22"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wPN-1O-otu">
+                            <rect key="frame" x="0.0" y="184" width="414" height="634"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="3HK-wj-RBU" firstAttribute="top" secondItem="UE9-O5-MGH" secondAttribute="bottom" constant="8" id="4kL-Zm-b4d"/>
+                        <constraint firstAttribute="trailing" secondItem="wPN-1O-otu" secondAttribute="trailing" id="Dqv-6Q-JiO"/>
                         <constraint firstAttribute="trailing" secondItem="3HK-wj-RBU" secondAttribute="trailing" id="QPQ-KC-6hW"/>
                         <constraint firstItem="3HK-wj-RBU" firstAttribute="leading" secondItem="wGf-0f-1Lq" secondAttribute="leading" id="TGF-mG-4dc"/>
+                        <constraint firstItem="wPN-1O-otu" firstAttribute="top" secondItem="veX-Wk-EVh" secondAttribute="bottom" constant="8" id="Txt-0D-Mot"/>
+                        <constraint firstItem="veX-Wk-EVh" firstAttribute="top" secondItem="3HK-wj-RBU" secondAttribute="bottom" constant="8" id="Xsb-wG-tbg"/>
+                        <constraint firstItem="wPN-1O-otu" firstAttribute="leading" secondItem="wGf-0f-1Lq" secondAttribute="leading" id="gMR-hP-sVY"/>
                         <constraint firstItem="UE9-O5-MGH" firstAttribute="top" secondItem="wGf-0f-1Lq" secondAttribute="top" constant="16" id="kkz-RB-eWY"/>
                         <constraint firstItem="UE9-O5-MGH" firstAttribute="leading" secondItem="wGf-0f-1Lq" secondAttribute="leading" id="kxX-qR-kPh"/>
                         <constraint firstAttribute="trailing" secondItem="UE9-O5-MGH" secondAttribute="trailing" id="m5b-DZ-FIJ"/>
+                        <constraint firstItem="veX-Wk-EVh" firstAttribute="leading" secondItem="wGf-0f-1Lq" secondAttribute="leading" constant="8" id="piy-lQ-Inm"/>
+                        <constraint firstAttribute="bottom" secondItem="wPN-1O-otu" secondAttribute="bottom" id="tGm-Ab-w37"/>
                     </constraints>
                 </view>
             </subviews>
@@ -76,6 +102,7 @@
         </view>
     </objects>
     <resources>
+        <image name="eye.slash.fill" catalog="system" width="128" height="82"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
