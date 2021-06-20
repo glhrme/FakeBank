@@ -8,11 +8,17 @@
 import UIKit
 
 class ExtratoViewController: UIViewController {
-
+    
+    let identifierCell = "ExtratoTableViewCell"
+    let data = ["String 1", "String 2"]
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.tableView.register(UINib(nibName: "ExtratoTableViewCell", bundle: nil), forCellReuseIdentifier: self.identifierCell)
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -20,4 +26,15 @@ class ExtratoViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
+}
+
+extension ExtratoViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 30
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.identifierCell) as! ExtratoTableViewCell
+        return cell
+    }
 }
