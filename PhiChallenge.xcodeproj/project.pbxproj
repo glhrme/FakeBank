@@ -23,6 +23,7 @@
 		11A582AE267FDE3E00E74929 /* Transacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A582AD267FDE3D00E74929 /* Transacao.swift */; };
 		11A582B3267FDE6B00E74929 /* Saldo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A582B2267FDE6B00E74929 /* Saldo.swift */; };
 		11A582B8267FE21D00E74929 /* Detalhes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A582B7267FE21D00E74929 /* Detalhes.swift */; };
+		11A582BE267FEA3500E74929 /* ExtratoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A582BD267FEA3500E74929 /* ExtratoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		11A582AD267FDE3D00E74929 /* Transacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transacao.swift; sourceTree = "<group>"; };
 		11A582B2267FDE6B00E74929 /* Saldo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saldo.swift; sourceTree = "<group>"; };
 		11A582B7267FE21D00E74929 /* Detalhes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detalhes.swift; sourceTree = "<group>"; };
+		11A582BD267FEA3500E74929 /* ExtratoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		11A27BE7267DAD5E004FC5E0 /* Extrato */ = {
 			isa = PBXGroup;
 			children = (
+				11A582BC267FEA1800E74929 /* ViewModel */,
 				11A582AC267FDE2B00E74929 /* Model */,
 				11A27BE9267DAD6A004FC5E0 /* View */,
 			);
@@ -206,6 +209,14 @@
 				11A582B7267FE21D00E74929 /* Detalhes.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		11A582BC267FEA1800E74929 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11A582BD267FEA3500E74929 /* ExtratoViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +359,7 @@
 				11A27BA4267DAC9D004FC5E0 /* AppDelegate.swift in Sources */,
 				11A582B8267FE21D00E74929 /* Detalhes.swift in Sources */,
 				11A582AE267FDE3E00E74929 /* Transacao.swift in Sources */,
+				11A582BE267FEA3500E74929 /* ExtratoViewModel.swift in Sources */,
 				11A27BA6267DAC9D004FC5E0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,9 @@ import UIKit
 class ExtratoViewController: UIViewController {
     
     let identifierCell = "ExtratoTableViewCell"
-    let data = ["String 1", "String 2"]
+    var data: [String] = []
+    
+    var viewModel: ExtratoViewModel?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,13 +21,13 @@ class ExtratoViewController: UIViewController {
         self.tableView.register(UINib(nibName: "ExtratoTableViewCell", bundle: nil), forCellReuseIdentifier: self.identifierCell)
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.data = viewModel?.getTransacoes() ?? []
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-
 }
 
 extension ExtratoViewController: UITableViewDelegate, UITableViewDataSource {
