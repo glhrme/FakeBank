@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Saldo {
+struct Saldo: Codable {
     let amount: Double
 }

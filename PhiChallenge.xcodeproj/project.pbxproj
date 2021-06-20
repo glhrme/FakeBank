@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		104365042A478D068E276E8B /* Pods_PhiChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A57BE634FF3ED6D2F51A05F /* Pods_PhiChallenge.framework */; };
+		1129EA17267FF8770001EE8D /* ExtratoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129EA16267FF8770001EE8D /* ExtratoService.swift */; };
+		1129EA20267FFA4B0001EE8D /* MoneyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129EA1F267FFA4B0001EE8D /* MoneyConverter.swift */; };
 		11A27BA4267DAC9D004FC5E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A27BA3267DAC9D004FC5E0 /* AppDelegate.swift */; };
 		11A27BA6267DAC9D004FC5E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A27BA5267DAC9D004FC5E0 /* SceneDelegate.swift */; };
 		11A27BAE267DAC9D004FC5E0 /* PhiChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11A27BAC267DAC9D004FC5E0 /* PhiChallenge.xcdatamodeld */; };
@@ -24,6 +27,8 @@
 		11A582B3267FDE6B00E74929 /* Saldo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A582B2267FDE6B00E74929 /* Saldo.swift */; };
 		11A582B8267FE21D00E74929 /* Detalhes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A582B7267FE21D00E74929 /* Detalhes.swift */; };
 		11A582BE267FEA3500E74929 /* ExtratoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A582BD267FEA3500E74929 /* ExtratoViewModel.swift */; };
+		52EC5DE898438C7EBDC4D16E /* Pods_PhiChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4545824DBB449DB1B5896E09 /* Pods_PhiChallengeTests.framework */; };
+		B8709F4CC567E91D60133321 /* Pods_PhiChallenge_PhiChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1787638B7535DA8E5F3D72C2 /* Pods_PhiChallenge_PhiChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1129EA16267FF8770001EE8D /* ExtratoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoService.swift; sourceTree = "<group>"; };
+		1129EA1F267FFA4B0001EE8D /* MoneyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyConverter.swift; sourceTree = "<group>"; };
 		11A27BA0267DAC9D004FC5E0 /* PhiChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhiChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A27BA3267DAC9D004FC5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A27BA5267DAC9D004FC5E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +74,15 @@
 		11A582B2267FDE6B00E74929 /* Saldo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saldo.swift; sourceTree = "<group>"; };
 		11A582B7267FE21D00E74929 /* Detalhes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detalhes.swift; sourceTree = "<group>"; };
 		11A582BD267FEA3500E74929 /* ExtratoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoViewModel.swift; sourceTree = "<group>"; };
+		1787638B7535DA8E5F3D72C2 /* Pods_PhiChallenge_PhiChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhiChallenge_PhiChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4545824DBB449DB1B5896E09 /* Pods_PhiChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhiChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90743411B5BABC1B9B002F33 /* Pods-PhiChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhiChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-PhiChallengeTests/Pods-PhiChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A57BE634FF3ED6D2F51A05F /* Pods_PhiChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhiChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81BAC3AF41C6432CF482307 /* Pods-PhiChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhiChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-PhiChallengeTests/Pods-PhiChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1FE7D44FEB6A194B5F5C19A /* Pods-PhiChallenge-PhiChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhiChallenge-PhiChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-PhiChallenge-PhiChallengeUITests/Pods-PhiChallenge-PhiChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1685A960FFA52EEE986B798 /* Pods-PhiChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhiChallenge.debug.xcconfig"; path = "Target Support Files/Pods-PhiChallenge/Pods-PhiChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		F3DA635413A22AE156A38A7D /* Pods-PhiChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhiChallenge.release.xcconfig"; path = "Target Support Files/Pods-PhiChallenge/Pods-PhiChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		F53235D2873D9183A7499D27 /* Pods-PhiChallenge-PhiChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhiChallenge-PhiChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhiChallenge-PhiChallengeUITests/Pods-PhiChallenge-PhiChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104365042A478D068E276E8B /* Pods_PhiChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52EC5DE898438C7EBDC4D16E /* Pods_PhiChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +106,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8709F4CC567E91D60133321 /* Pods_PhiChallenge_PhiChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1129EA15267FF85E0001EE8D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1129EA16267FF8770001EE8D /* ExtratoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1129EA1E267FFA3B0001EE8D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1129EA1F267FFA4B0001EE8D /* MoneyConverter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		11A27B97267DAC9D004FC5E0 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +136,8 @@
 				11A27BBC267DAC9E004FC5E0 /* PhiChallengeTests */,
 				11A27BC7267DAC9E004FC5E0 /* PhiChallengeUITests */,
 				11A27BA1267DAC9D004FC5E0 /* Products */,
+				2432A8688DDA62BCA671BC65 /* Pods */,
+				6F90DBB0E290026491C268F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +154,7 @@
 		11A27BA2267DAC9D004FC5E0 /* PhiChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				1129EA1E267FFA3B0001EE8D /* Utils */,
 				11A27BE6267DAD57004FC5E0 /* AppViews */,
 				11A27BE0267DAD34004FC5E0 /* Coordinator */,
 				11A27BDF267DAD28004FC5E0 /* AppData */,
@@ -175,6 +213,7 @@
 		11A27BE7267DAD5E004FC5E0 /* Extrato */ = {
 			isa = PBXGroup;
 			children = (
+				1129EA15267FF85E0001EE8D /* Service */,
 				11A582BC267FEA1800E74929 /* ViewModel */,
 				11A582AC267FDE2B00E74929 /* Model */,
 				11A27BE9267DAD6A004FC5E0 /* View */,
@@ -219,6 +258,29 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		2432A8688DDA62BCA671BC65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1685A960FFA52EEE986B798 /* Pods-PhiChallenge.debug.xcconfig */,
+				F3DA635413A22AE156A38A7D /* Pods-PhiChallenge.release.xcconfig */,
+				F53235D2873D9183A7499D27 /* Pods-PhiChallenge-PhiChallengeUITests.debug.xcconfig */,
+				C1FE7D44FEB6A194B5F5C19A /* Pods-PhiChallenge-PhiChallengeUITests.release.xcconfig */,
+				B81BAC3AF41C6432CF482307 /* Pods-PhiChallengeTests.debug.xcconfig */,
+				90743411B5BABC1B9B002F33 /* Pods-PhiChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6F90DBB0E290026491C268F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A57BE634FF3ED6D2F51A05F /* Pods_PhiChallenge.framework */,
+				1787638B7535DA8E5F3D72C2 /* Pods_PhiChallenge_PhiChallengeUITests.framework */,
+				4545824DBB449DB1B5896E09 /* Pods_PhiChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,9 +288,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11A27BCD267DAC9E004FC5E0 /* Build configuration list for PBXNativeTarget "PhiChallenge" */;
 			buildPhases = (
+				827C70340B425D3F120A0F98 /* [CP] Check Pods Manifest.lock */,
 				11A27B9C267DAC9D004FC5E0 /* Sources */,
 				11A27B9D267DAC9D004FC5E0 /* Frameworks */,
 				11A27B9E267DAC9D004FC5E0 /* Resources */,
+				5B676C23CFE3428939D8CAE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,6 +307,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11A27BD0267DAC9E004FC5E0 /* Build configuration list for PBXNativeTarget "PhiChallengeTests" */;
 			buildPhases = (
+				9F533AA2B8409ABCC2B50B72 /* [CP] Check Pods Manifest.lock */,
 				11A27BB5267DAC9E004FC5E0 /* Sources */,
 				11A27BB6267DAC9E004FC5E0 /* Frameworks */,
 				11A27BB7267DAC9E004FC5E0 /* Resources */,
@@ -261,9 +326,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11A27BD3267DAC9E004FC5E0 /* Build configuration list for PBXNativeTarget "PhiChallengeUITests" */;
 			buildPhases = (
+				72361EA1F2CFF7F2BB780C2B /* [CP] Check Pods Manifest.lock */,
 				11A27BC0267DAC9E004FC5E0 /* Sources */,
 				11A27BC1267DAC9E004FC5E0 /* Frameworks */,
 				11A27BC2267DAC9E004FC5E0 /* Resources */,
+				04D60B810F35F563A99F4E97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,6 +412,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04D60B810F35F563A99F4E97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhiChallenge-PhiChallengeUITests/Pods-PhiChallenge-PhiChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhiChallenge-PhiChallengeUITests/Pods-PhiChallenge-PhiChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhiChallenge-PhiChallengeUITests/Pods-PhiChallenge-PhiChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B676C23CFE3428939D8CAE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhiChallenge/Pods-PhiChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhiChallenge/Pods-PhiChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhiChallenge/Pods-PhiChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72361EA1F2CFF7F2BB780C2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhiChallenge-PhiChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		827C70340B425D3F120A0F98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhiChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F533AA2B8409ABCC2B50B72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhiChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11A27B9C267DAC9D004FC5E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -356,7 +526,9 @@
 				11A582A4267FC9EB00E74929 /* ExtratoTableViewCell.swift in Sources */,
 				11A27BEC267DAD7E004FC5E0 /* ExtratoViewController.swift in Sources */,
 				11A27BE2267DAD48004FC5E0 /* MainCoordinator.swift in Sources */,
+				1129EA20267FFA4B0001EE8D /* MoneyConverter.swift in Sources */,
 				11A27BA4267DAC9D004FC5E0 /* AppDelegate.swift in Sources */,
+				1129EA17267FF8770001EE8D /* ExtratoService.swift in Sources */,
 				11A582B8267FE21D00E74929 /* Detalhes.swift in Sources */,
 				11A582AE267FDE3E00E74929 /* Transacao.swift in Sources */,
 				11A582BE267FEA3500E74929 /* ExtratoViewModel.swift in Sources */,
@@ -525,6 +697,7 @@
 		};
 		11A27BCE267DAC9E004FC5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1685A960FFA52EEE986B798 /* Pods-PhiChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -545,6 +718,7 @@
 		};
 		11A27BCF267DAC9E004FC5E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3DA635413A22AE156A38A7D /* Pods-PhiChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -565,6 +739,7 @@
 		};
 		11A27BD1267DAC9E004FC5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B81BAC3AF41C6432CF482307 /* Pods-PhiChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -587,6 +762,7 @@
 		};
 		11A27BD2267DAC9E004FC5E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90743411B5BABC1B9B002F33 /* Pods-PhiChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -609,6 +785,7 @@
 		};
 		11A27BD4267DAC9E004FC5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F53235D2873D9183A7499D27 /* Pods-PhiChallenge-PhiChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -629,6 +806,7 @@
 		};
 		11A27BD5267DAC9E004FC5E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1FE7D44FEB6A194B5F5C19A /* Pods-PhiChallenge-PhiChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

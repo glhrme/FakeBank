@@ -1,0 +1,6 @@
+framework module Pods_PhiChallengeTests {
+  umbrella header "Pods-PhiChallengeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

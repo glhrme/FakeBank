@@ -15,28 +15,48 @@ class ExtratoViewController: UIViewController {
     var viewModel: ExtratoViewModel?
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var saldoTextLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.register(UINib(nibName: "ExtratoTableViewCell", bundle: nil), forCellReuseIdentifier: self.identifierCell)
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.data = viewModel?.getTransacoes() ?? []
+        self.setupTableView()
+        self.setup()
+        self.fetchSaldo()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
+    
+    func setupTableView() {
+        self.tableView.register(UINib(nibName: "ExtratoTableViewCell", bundle: nil), forCellReuseIdentifier: self.identifierCell)
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+    }
+    
+    func setup() {
+        self.viewModel?.dataSource = self
+    }
+    
+    func fetchSaldo() {
+        self.viewModel?.getSaldo()
+    }
 }
 
 extension ExtratoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return self.data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifierCell) as! ExtratoTableViewCell
         return cell
+    }
+}
+
+extension ExtratoViewController: ExtratoDataSource {
+    func updateSaldo(saldo: Saldo) {
+        saldoTextLabel.text = MoneyConverter.toMoney(value: saldo.amount) ?? ""
     }
 }
