@@ -36,9 +36,9 @@ class MainCoordinator {
 }
 
 extension MainCoordinator: ExtratoViewModelDelegate {
-    func goDetalhes() {
+    func goDetalhes(_ id: String) {
         let comprovanteVC = ComprovanteViewController()
-        let viewModel = ComprovanteViewModel()
+        let viewModel = ComprovanteViewModel(id)
         viewModel.delegate = self
         comprovanteVC.viewModel = viewModel
         self.comprovanteViewModel = viewModel

@@ -4,15 +4,54 @@
 //
 //  Created by Guilherme de Assis dos Santos on 20/06/21.
 //
-
 import UIKit
 
 class ComprovanteViewController: UIViewController {
     
     var viewModel: ComprovanteViewModel?
 
+    @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var mainStackView: UIStackView!
+    @IBOutlet weak var tipoMovimentacaoTextLabel: UILabel!
+    @IBOutlet weak var valorTextLabel: UILabel!
+    @IBOutlet weak var recebedorTextLabel: UILabel!
+    @IBOutlet weak var bancoTextLabel: UILabel!
+    @IBOutlet weak var dataHoraTextLabel: UILabel!
+    @IBOutlet weak var autenticacaoTextLabel: UILabel!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
+        self.viewModel?.dataSource = self
+        mainStackView.isHidden = false
+        loadingActivityIndicator.isHidden = true
+        self.fetch()
+    }
+    
+    
+    @IBAction func backPressed(_ sender: UIButton) {
+        viewModel?.goBack()
+    }
+    
+    
+    func fetch() {
+        viewModel?.fetchComprovante()
     }
 
+    @IBAction func compartilharPressed(_ sender: UIButton) {
+    }
+    
+}
+
+extension ComprovanteViewController: ComprovanteDataSource {
+    func setInfos(comprovante: Detalhes) {
+        mainStackView.isHidden = false
+        loadingActivityIndicator.isHidden = true
+        
+        self.tipoMovimentacaoTextLabel.text = comprovante.description
+        self.valorTextLabel.text = MoneyConverter.toMoney(value: comprovante.amount)
+        self.recebedorTextLabel.text = comprovante.to
+        self.bancoTextLabel.text = "Desconhecido"
+        self.autenticacaoTextLabel.text = comprovante.authentication
+        self.dataHoraTextLabel.text = comprovante.createdAt
+    }
 }

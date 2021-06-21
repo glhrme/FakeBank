@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ExtratoViewModelDelegate: AnyObject {
-    func goDetalhes()
+    func goDetalhes(_ id: String)
 }
 
 protocol ExtratoDataSource: AnyObject {
@@ -21,8 +21,8 @@ class ExtratoViewModel {
     weak var dataSource: ExtratoDataSource?
     
     
-    func goToDetalhes() {
-        delegate?.goDetalhes()
+    func goToDetalhes(_ id: String) {
+        delegate?.goDetalhes(id)
     }
     
     func getTransacoes() {

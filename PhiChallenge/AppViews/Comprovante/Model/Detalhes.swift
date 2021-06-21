@@ -14,5 +14,6 @@ struct Detalhes: Codable {
     let tType: String
     let createdAt: String
     let to: String
-    let Description: String
+    let description: String
+    
 }

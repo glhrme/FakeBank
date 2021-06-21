@@ -58,7 +58,7 @@ extension ExtratoViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.viewModel?.goToDetalhes()
+        self.viewModel?.goToDetalhes(transacoes[indexPath.row].id)
     }
 }
 
