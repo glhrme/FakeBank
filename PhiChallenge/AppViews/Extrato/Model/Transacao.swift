@@ -11,7 +11,7 @@ struct Transacao: Codable {
     let createdAt: String
     let id: String
     let amount: Double
-    let to: String
+    var to: String?
     let description: String
     let tType: String
     

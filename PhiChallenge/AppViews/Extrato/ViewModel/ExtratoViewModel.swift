@@ -20,6 +20,7 @@ class ExtratoViewModel {
     weak var delegate: ExtratoViewModelDelegate?
     weak var dataSource: ExtratoDataSource?
     
+    
     func goToDetalhes() {
         delegate?.goToDetalhes()
     }

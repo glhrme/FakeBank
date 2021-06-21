@@ -33,6 +33,7 @@ class ExtratoViewController: UIViewController {
         self.tableView.register(UINib(nibName: "ExtratoTableViewCell", bundle: nil), forCellReuseIdentifier: self.identifierCell)
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
     }
     
     func setup() {
@@ -59,7 +60,10 @@ extension ExtratoViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ExtratoViewController: ExtratoDataSource {
     func updateTransacoes(transacoes: [Transacao]) {
-        self.transacoes = transacoes
+        for transacao in transacoes {
+            self.transacoes.append(transacao)
+            self.tableView.reloadData()
+        }
         self.tableView.reloadData()
     }
     

@@ -33,7 +33,7 @@ class ExtratoTableViewCell: UITableViewCell {
         self.dateTextlabel.text = transacao.getFormatedDate()
         self.acaoTextLabel.text = transacao.description
         self.valueTextLabel.text = MoneyConverter.toMoney(value: transacao.amount)
-        self.destinoTextLabel.text = transacao.to
+        self.destinoTextLabel.text = transacao.to ?? "Desconhecido"
     }
     
     func getTransactionColor(tipo: String) -> UIColor {

@@ -42,10 +42,11 @@ class ExtratoService {
     //MARK: - Transacao
     
     func fetchTransacoes(handler: @escaping (_ resultado: Result<[Transacao], Error>) -> Void) {
-        AF.request("\(endpoint)/myStatement/10/0", headers: ["token": self.token]).responseData {response in
+        AF.request("\(endpoint)/myStatement/50/0", headers: ["token": self.token]).responseData {response in
             switch response.result {
             case .success(let data):
                 DispatchQueue.main.async {
+                    
                     handler(self.parseTransacoes(data: data))
                 }
             case .failure(let error):
