@@ -11,6 +11,9 @@
 		1129EA17267FF8770001EE8D /* ExtratoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129EA16267FF8770001EE8D /* ExtratoService.swift */; };
 		1129EA20267FFA4B0001EE8D /* MoneyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129EA1F267FFA4B0001EE8D /* MoneyConverter.swift */; };
 		1129EA252680063C0001EE8D /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129EA242680063C0001EE8D /* DateConverter.swift */; };
+		1129EA30268028BC0001EE8D /* ComprovanteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129EA2E268028BC0001EE8D /* ComprovanteViewController.swift */; };
+		1129EA31268028BC0001EE8D /* ComprovanteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1129EA2F268028BC0001EE8D /* ComprovanteViewController.xib */; };
+		1129EA3E26802C280001EE8D /* ComprovanteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1129EA3D26802C280001EE8D /* ComprovanteViewModel.swift */; };
 		11A27BA4267DAC9D004FC5E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A27BA3267DAC9D004FC5E0 /* AppDelegate.swift */; };
 		11A27BA6267DAC9D004FC5E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A27BA5267DAC9D004FC5E0 /* SceneDelegate.swift */; };
 		11A27BAE267DAC9D004FC5E0 /* PhiChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11A27BAC267DAC9D004FC5E0 /* PhiChallenge.xcdatamodeld */; };
@@ -53,6 +56,9 @@
 		1129EA16267FF8770001EE8D /* ExtratoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoService.swift; sourceTree = "<group>"; };
 		1129EA1F267FFA4B0001EE8D /* MoneyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyConverter.swift; sourceTree = "<group>"; };
 		1129EA242680063C0001EE8D /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
+		1129EA2E268028BC0001EE8D /* ComprovanteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprovanteViewController.swift; sourceTree = "<group>"; };
+		1129EA2F268028BC0001EE8D /* ComprovanteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComprovanteViewController.xib; sourceTree = "<group>"; };
+		1129EA3D26802C280001EE8D /* ComprovanteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprovanteViewModel.swift; sourceTree = "<group>"; };
 		11A27BA0267DAC9D004FC5E0 /* PhiChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhiChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A27BA3267DAC9D004FC5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A27BA5267DAC9D004FC5E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +138,41 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		1129EA2C2680283C0001EE8D /* Comprovante */ = {
+			isa = PBXGroup;
+			children = (
+				1129EA3C26802C030001EE8D /* ViewModel */,
+				1129EA38268028F40001EE8D /* Model */,
+				1129EA2D268028460001EE8D /* View */,
+			);
+			path = Comprovante;
+			sourceTree = "<group>";
+		};
+		1129EA2D268028460001EE8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1129EA2E268028BC0001EE8D /* ComprovanteViewController.swift */,
+				1129EA2F268028BC0001EE8D /* ComprovanteViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1129EA38268028F40001EE8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11A582B7267FE21D00E74929 /* Detalhes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1129EA3C26802C030001EE8D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1129EA3D26802C280001EE8D /* ComprovanteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		11A27B97267DAC9D004FC5E0 = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +249,7 @@
 		11A27BE6267DAD57004FC5E0 /* AppViews */ = {
 			isa = PBXGroup;
 			children = (
+				1129EA2C2680283C0001EE8D /* Comprovante */,
 				11A27BE7267DAD5E004FC5E0 /* Extrato */,
 			);
 			path = AppViews;
@@ -248,7 +290,6 @@
 			children = (
 				11A582AD267FDE3D00E74929 /* Transacao.swift */,
 				11A582B2267FDE6B00E74929 /* Saldo.swift */,
-				11A582B7267FE21D00E74929 /* Detalhes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -393,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A27BB3267DAC9E004FC5E0 /* LaunchScreen.storyboard in Resources */,
+				1129EA31268028BC0001EE8D /* ComprovanteViewController.xib in Resources */,
 				11A27BED267DAD7E004FC5E0 /* ExtratoViewController.xib in Resources */,
 				11A27BB0267DAC9E004FC5E0 /* Assets.xcassets in Resources */,
 				11A582A5267FC9EB00E74929 /* ExtratoTableViewCell.xib in Resources */,
@@ -527,6 +569,7 @@
 				11A27BF5267DAD94004FC5E0 /* AppCoordinator.swift in Sources */,
 				11A27BAE267DAC9D004FC5E0 /* PhiChallenge.xcdatamodeld in Sources */,
 				11A582A4267FC9EB00E74929 /* ExtratoTableViewCell.swift in Sources */,
+				1129EA30268028BC0001EE8D /* ComprovanteViewController.swift in Sources */,
 				11A27BEC267DAD7E004FC5E0 /* ExtratoViewController.swift in Sources */,
 				11A27BE2267DAD48004FC5E0 /* MainCoordinator.swift in Sources */,
 				1129EA20267FFA4B0001EE8D /* MoneyConverter.swift in Sources */,
@@ -537,6 +580,7 @@
 				11A582AE267FDE3E00E74929 /* Transacao.swift in Sources */,
 				11A582BE267FEA3500E74929 /* ExtratoViewModel.swift in Sources */,
 				11A27BA6267DAC9D004FC5E0 /* SceneDelegate.swift in Sources */,
+				1129EA3E26802C280001EE8D /* ComprovanteViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -56,6 +56,10 @@ extension ExtratoViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setup(transacao: transacoes[indexPath.row])
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.viewModel?.goToDetalhes()
+    }
 }
 
 extension ExtratoViewController: ExtratoDataSource {
