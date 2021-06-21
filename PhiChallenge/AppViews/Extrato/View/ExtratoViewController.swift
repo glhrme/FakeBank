@@ -10,7 +10,7 @@ import UIKit
 class ExtratoViewController: UIViewController {
     
     let identifierCell = "ExtratoTableViewCell"
-    var data: [String] = []
+    var transacoes: [Transacao] = []
     
     var viewModel: ExtratoViewModel?
     
@@ -21,7 +21,7 @@ class ExtratoViewController: UIViewController {
         super.viewDidLoad()
         self.setupTableView()
         self.setup()
-        self.fetchSaldo()
+        self.fetch()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -39,23 +39,30 @@ class ExtratoViewController: UIViewController {
         self.viewModel?.dataSource = self
     }
     
-    func fetchSaldo() {
+    func fetch() {
         self.viewModel?.getSaldo()
+        self.viewModel?.getTransacoes()
     }
 }
 
 extension ExtratoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.data.count
+        return self.transacoes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.identifierCell) as! ExtratoTableViewCell
+        cell.setup(transacao: transacoes[indexPath.row])
         return cell
     }
 }
 
 extension ExtratoViewController: ExtratoDataSource {
+    func updateTransacoes(transacoes: [Transacao]) {
+        self.transacoes = transacoes
+        self.tableView.reloadData()
+    }
+    
     func updateSaldo(saldo: Saldo) {
         saldoTextLabel.text = MoneyConverter.toMoney(value: saldo.amount) ?? ""
     }

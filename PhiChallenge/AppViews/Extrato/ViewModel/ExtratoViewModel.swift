@@ -13,6 +13,7 @@ protocol ExtratoViewModelDelegate: AnyObject {
 
 protocol ExtratoDataSource: AnyObject {
     func updateSaldo(saldo: Saldo)
+    func updateTransacoes(transacoes: [Transacao])
 }
 
 class ExtratoViewModel {
@@ -23,8 +24,15 @@ class ExtratoViewModel {
         delegate?.goToDetalhes()
     }
     
-    func getTransacoes() -> [String] {
-        return ["String 1", "String 2"]
+    func getTransacoes() {
+        ExtratoService().fetchTransacoes { (result) in
+            switch result {
+            case .success(let transacoes):
+                self.dataSource?.updateTransacoes(transacoes: transacoes)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     func getSaldo() {

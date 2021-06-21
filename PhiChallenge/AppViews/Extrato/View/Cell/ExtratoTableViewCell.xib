@@ -27,8 +27,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fY0-F7-kdv">
                         <rect key="frame" x="0.0" y="10" width="320" height="81"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nGS-lb-olV">
-                                <rect key="frame" x="8" y="35.5" width="11" height="10"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nGS-lb-olV">
+                                <rect key="frame" x="8" y="35" width="11" height="11"/>
                                 <color key="backgroundColor" red="0.0" green="0.75686274509999996" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.0" green="0.75686274509999996" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -88,13 +88,14 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="acaoTextLabel" destination="2YU-oA-cI9" id="S6c-GZ-sEo"/>
                 <outlet property="circleImageView" destination="nGS-lb-olV" id="klI-8m-cXR"/>
+                <outlet property="dateTextlabel" destination="i4y-RW-vPc" id="jsU-tA-CuZ"/>
+                <outlet property="destinoTextLabel" destination="WOJ-8o-V0L" id="JDl-lX-vFb"/>
                 <outlet property="mainContentView" destination="fY0-F7-kdv" id="YI3-r7-OR2"/>
+                <outlet property="valueTextLabel" destination="iVl-nG-qCf" id="ilC-Ok-pLB"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="122.87946428571428"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="circle.fill" catalog="system" width="128" height="121"/>
-    </resources>
 </document>
