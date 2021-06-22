@@ -38,6 +38,14 @@ class ComprovanteViewController: UIViewController {
     }
 
     @IBAction func compartilharPressed(_ sender: UIButton) {
+        UIGraphicsBeginImageContextWithOptions(self.view.frame.size, self.view.isOpaque, UIScreen.main.scale)
+        self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        let sharedItens: [Any] = [image]
+        let activityViewController = UIActivityViewController(activityItems: sharedItens , applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
     }
     
 }
@@ -50,7 +58,7 @@ extension ComprovanteViewController: ComprovanteDataSource {
         self.tipoMovimentacaoTextLabel.text = comprovante.description
         self.valorTextLabel.text = MoneyConverter.toMoney(value: comprovante.amount)
         self.recebedorTextLabel.text = comprovante.to
-        self.bancoTextLabel.text = "Desconhecido"
+        self.bancoTextLabel.text = "PagBank"
         self.autenticacaoTextLabel.text = comprovante.authentication
         self.dataHoraTextLabel.text = comprovante.createdAt
     }
